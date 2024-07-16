@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/styles/css",
+        "savePathReplacementPairs": null
+      }
+    ],
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "terminal.integrated.commandsToSkipShell": ["npm install touch-cli -g"],
+    "json.schemas": [],
+    "liveSassCompile.settings.autoprefix": []
+  }
+}
