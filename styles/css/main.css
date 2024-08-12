@@ -49,17 +49,4 @@
   -webkit-filter: blur(8px);
 }
 
-.scrolled {
-  background: linear-gradient(#e5e7eb, #f7f7fa);
-  opacity: 0.9;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.025);
-  position: fixed;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  transform: translateY(100%);
-  width: 100%;
-  z-index: 50;
-}
-
 /*# sourceMappingURL=main.css.map */

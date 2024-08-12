@@ -1,15 +1,1 @@
-$graysemilight: #e5e7eb;
-$graylight: #f7f7fa;
 
-@mixin bg-gradient() {
-  background: linear-gradient($graysemilight, $graylight);
-  opacity: 0.9;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.025);
-  position: fixed;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  transform: translateY(100%);
-  width: 100%;
-  z-index: 50;
-}
