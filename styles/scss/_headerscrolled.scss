@@ -1,0 +1,5 @@
+@import "variables";
+
+.scrolled {
+  @include bg-gradient();
+}

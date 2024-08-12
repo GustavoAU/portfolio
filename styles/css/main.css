@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap");
+.hamburger .line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  border-radius: 5px;
+  background: linear-gradient(#1f2024, #c0ccda);
+  transition: all 0.8s;
+}
+.hamburger .line-1 {
+  top: 0;
+}
+.hamburger .line-2 {
+  top: 50%;
+}
+.hamburger .line-3 {
+  top: 100%;
+}
+.hamburger.cross .line-1 {
+  transform: translateY(11.99px) rotate(50deg);
+}
+@media screen and (min-width: 680px) {
+  .hamburger.cross .line-1 {
+    transform: translateY(8px) rotate(50deg);
+  }
+}
+.hamburger.cross .line-2 {
+  opacity: 0;
+}
+.hamburger.cross .line-3 {
+  transform: translateY(-0.4px) rotate(-50deg);
+}
 
+.menu.cross {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.menu__request {
+  height: calc(100dvh - 32px);
+}
+
+.overlay__request {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.scrolled {
+  background: linear-gradient(#e5e7eb, #f7f7fa);
+  opacity: 0.9;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.025);
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  width: 100%;
+  z-index: 50;
+}
 
 /*# sourceMappingURL=main.css.map */

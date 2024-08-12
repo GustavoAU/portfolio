@@ -1,0 +1,8 @@
+.menu__request {
+  height: calc(100dvh - 32px);
+}
+
+.overlay__request {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
