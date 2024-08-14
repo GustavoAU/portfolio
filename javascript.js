@@ -2,7 +2,7 @@ let hamburger = document.getElementById("hamburger");
 let menuNavigation = document.getElementById("Menu__navigation");
 let overlayNavigation = document.getElementById("overlay-navigation");
 let headerFixed = document.getElementById("Header__fixed");
-let body = document.querySelector("body");
+let body = document.getElementById("body");
 let menuContact = document.getElementById("Menu__contact");
 let overlayContact = document.getElementById("overlay__contact");
 
@@ -11,6 +11,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
   overlayNavigation.classList.toggle("hidden");
   body.classList.toggle("overflow");
   headerFixed.classList.add("hidden");
+  
 });
 
 document.getElementById("Header__contact").addEventListener("click", () => {

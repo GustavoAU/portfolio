@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap");
+.overflow {
+  overflow: hidden;
+}
+
 .hamburger .line {
   width: 100%;
   height: 2px;
