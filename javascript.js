@@ -7,8 +7,6 @@ let menuContact = document.getElementById("Menu__contact");
 let overlayContact = document.getElementById("overlay__contact");
 
 document.getElementById("hamburger").addEventListener("click", () => {
-  hamburger.classList.toggle("cross");
-  menuNavigation.classList.toggle("cross");
   menuNavigation.classList.toggle("hidden");
   overlayNavigation.classList.toggle("hidden");
   body.classList.toggle("overflow");
@@ -16,7 +14,6 @@ document.getElementById("hamburger").addEventListener("click", () => {
 });
 
 document.getElementById("Header__contact").addEventListener("click", () => {
-  hamburger.classList.remove("cross");
   menuNavigation.classList.add("hidden");
   menuContact.classList.toggle("hidden");
   overlayNavigation.classList.add("hidden");
@@ -28,7 +25,6 @@ document.getElementById("Header__contact").addEventListener("click", () => {
 document
   .getElementById("Header__contact-menu")
   .addEventListener("click", () => {
-    hamburger.classList.remove("cross");
     menuNavigation.classList.add("hidden");
     menuContact.classList.toggle("hidden");
     overlayNavigation.classList.add("hidden");
@@ -50,24 +46,18 @@ document.getElementById("overlay__contact").addEventListener("click", () => {
 });
 
 document.getElementById("overlay-navigation").addEventListener("click", () => {
-  menuNavigation.classList.remove("cross");
   menuNavigation.classList.add("hidden");
-  hamburger.classList.remove("cross");
   overlayNavigation.classList.add("hidden");
   body.classList.remove("overflow");
 });
 
 document.getElementById("close-navigation").addEventListener("click", () => {
-  menuNavigation.classList.remove("cross");
-  hamburger.classList.remove("cross");
   overlayNavigation.classList.add("hidden");
   menuNavigation.classList.add("hidden");
   body.classList.remove("overflow");
 });
 
 document.getElementById("hamburger-fixed").addEventListener("click", () => {
-  hamburger.classList.toggle("cross");
-  menuNavigation.classList.toggle("cross");
   menuNavigation.classList.toggle("hidden");
   overlayNavigation.classList.toggle("hidden");
   body.classList.toggle("overflow");
@@ -77,7 +67,6 @@ document.getElementById("hamburger-fixed").addEventListener("click", () => {
 document
   .getElementById("Header__contact-fixed")
   .addEventListener("click", () => {
-    hamburger.classList.remove("cross");
     menuNavigation.classList.add("hidden");
     menuContact.classList.remove("hidden");
     overlayNavigation.classList.add("hidden");
@@ -89,7 +78,6 @@ document
 document
   .getElementById("Header__contact-bar-nav")
   .addEventListener("click", () => {
-    hamburger.classList.remove("cross");
     menuNavigation.classList.add("hidden");
     menuContact.classList.toggle("hidden");
     overlayNavigation.classList.add("hidden");
