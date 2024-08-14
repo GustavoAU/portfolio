@@ -16,37 +16,12 @@
 .hamburger .line-3 {
   top: 100%;
 }
-.hamburger.cross .line-1 {
-  transform: translateY(11.99px) rotate(50deg);
-}
-@media screen and (min-width: 680px) {
-  .hamburger.cross .line-1 {
-    transform: translateY(8px) rotate(50deg);
-  }
-}
-.hamburger.cross .line-2 {
-  opacity: 0;
-}
-.hamburger.cross .line-3 {
-  transform: translateY(-0.4px) rotate(-50deg);
-}
-
-.menu.cross {
+.hamburger .menu.cross {
   opacity: 1;
   transition: all 0.3s;
 }
-
-.overflow {
+.hamburger .overflow {
   overflow: hidden;
-}
-
-.menu__request {
-  height: calc(100dvh - 32px);
-}
-
-.overlay__request {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 /*# sourceMappingURL=main.css.map */

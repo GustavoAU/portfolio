@@ -1,5 +1,3 @@
-@import "queries";
-
 .hamburger {
   .line {
     width: 100%;
@@ -22,27 +20,12 @@
     top: 100%;
   }
 
-  &.cross .line-1 {
-    transform: translateY(11.99px) rotate(50deg);
-    @include mobile {
-      transform: translateY(8px) rotate(50deg);
-    }
+  .menu.cross {
+    opacity: 1;
+    transition: all 0.3s;
   }
 
-  &.cross .line-2 {
-    opacity: 0;
+  .overflow {
+    overflow: hidden;
   }
-
-  &.cross .line-3 {
-    transform: translateY(-0.4px) rotate(-50deg);
-  }
-}
-
-.menu.cross {
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-.overflow {
-  overflow: hidden;
 }

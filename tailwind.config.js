@@ -39,25 +39,9 @@ module.exports = {
           lightest: "#fcfbfd",
           semilightgray: "#e5e7eb",
         },
-
-        instagramcolor: {
-          royalBlue: "#405DE6	",
-          blues: "#5B51D8	",
-          purples: "#833AB4	",
-          darkpink: "#C13584	",
-          purplered: "#E1306C	",
-          reds: "#FD1D1D	",
-          darkorange: "#F56040	",
-          oranges: "#F77737	",
-          yellows: "#FCAF45	",
-          lightyellow: "#FFDC80	",
-        },
-        linkedin: {
-          blue: "#2867b2",
-        },
       },
       height: {
-        98: "calc(100dvh - 32px)",
+        menu: "calc(100dvh - 32px)",
       },
     },
   },
