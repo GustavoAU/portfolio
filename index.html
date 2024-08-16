@@ -19,65 +19,60 @@
   </head>
   <body id="body" class="font-inter h-[7000px]">
     <div
-      class="hero container mx-auto relative w-screen min-h-dvh bg-gradient-to-r from-gray-semilightgray to-gray-light sm:mt-5 rounded-xxl"
+      class="hero container mx-auto relative w-screen min-h-dvh bg-gradient-to-r from-gray-light to-gray-light sm:mt-5 rounded-xxl"
     >
       <header class="px-8 py-5 sm:px-14 sm:py-3">
         <div class="flex flex-col sm:flex-row sm:justify-between w-full">
-          <nav class="flex relative justify-between w-full">
-            <ul>
-              <li class="font-semibold text-sm tex leading-6">
-                <a href="#">Gustavo Uruena</a>
-              </li>
-              <li class="text-xs text-gray-800">
-                <a href="#">Web developer</a>
-              </li>
-            </ul>
-
-            <div class="relative right-0 left-0 top-0 translate-x-[100%]">
-              <img
-                src="Images/gustavo/Gustavo.jpg"
+          <div class="flex flex-col relative">
+            <div class="font-semibold text-sm leading-6">
+              <a href="#">Gustavo Uruena</a>
+            </div>
+            <div class="text-xs text-gray-800">
+              <a href="#">Web developer</a>
+            </div>
+          </div>
+          <div class="flex absolute left-2/4">
+            <a href="#"
+              ><img
+                src="images/gustavo/Gustavo.jpg"
                 alt="photo of myself"
                 class="hidden lg:inline-block sm:rounded-full sm:w-14"
-              />
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-6">
+              <ul class="hidden md:flex md:gap-6 mr-10 lg:mr-14">
+                <li class="text-xs">
+                  <a href="curriculum/Resume.pdf" download="Resume.pdf"
+                    >Download CV</a
+                  >
+                </li>
+                <li class="text-xs">
+                  <button
+                    id="header-contact"
+                    class="Header__contact relative after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-[1px] after:border-current after:content-['']"
+                  >
+                    Request a Project
+                  </button>
+                </li>
+              </ul>
+              <ion-icon
+                id="hamburger"
+                class="hamburger absolute text-4xl sm:text-3xl top-[4%] right-[10%] sm:top-[1.5%] sm:right-[8%] sm:translate-y-2/4 md:top-[0.7%] md:right-[5%] lg:right-[3.5%] cursor-pointer"
+                name="menu-outline"
+              ></ion-icon>
             </div>
-            <div class="flex items-center">
-              <nav class="flex gap-6">
-                <ul class="hidden md:flex md:gap-6">
-                  <li class="text-xs">
-                    <a href="Curriculum/Resume.pdf" download="Resume.pdf"
-                      >Download CV</a
-                    >
-                  </li>
-                  <li class="text-xs">
-                    <button
-                      id="Header__contact"
-                      class="Header__contact relative after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-[1px] after:border-current after:content-['']"
-                    >
-                      Request a Project
-                    </button>
-                  </li>
-                </ul>
-                <div
-                  id="hamburger"
-                  class="hamburger relative h-3 w-6 top-0 right-0 sm:top-2/4 sm:right-0 sm:translate-y-2/4 sm:w-4 sm:h-2 cursor-pointer"
-                >
-                  <div class="line line-1"></div>
-                  <div class="line line-2"></div>
-                  <div class="line line-3"></div>
-                </div>
-              </nav>
-            </div>
-          </nav>
+          </div>
         </div>
 
         <div
-          id="Menu__contact"
+          id="menu-contact"
           class="Menu__contact mt-1 left-[10%] w-[80%] h-menu py-11 px-8 z-40 rounded-xxl hidden sm:-translate-x-2/4 fixed sm:mt-0 sm:w-[60%] sm:h-menu bg-gray-lightest shadow-2xl sm:p-5 sm:left-1/2 lg:w-2/5 top-2/4 -translate-y-2/4 bottom-0 my-auto"
         >
           <ion-icon
             name="close-outline"
             id="close-contact"
-            class="close-contact absolute right-[5%] text-lg"
+            class="close-contact absolute right-[5%] text-2xl top-[4%] cursor-pointer"
           ></ion-icon>
           <div class="mb-6">
             <h3 class="text-center text-2xl font-semibold">
@@ -95,18 +90,18 @@
               type="text"
               id="Full name"
               placeholder="Whats your name?"
-              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs mb-6"
+              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs mb-7"
             />
             <label for="E-mail" class="block mb-1 text-xs">E-mail*</label>
             <input
               type="text"
               id="E-mail"
               placeholder="E-mail@example.com"
-              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs mb-6"
+              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs mb-7"
             />
 
             <label class="text-xs">Position & Company</label>
-            <div class="flex mt-1 justify-between mb-6">
+            <div class="flex mt-1 justify-between mb-7">
               <input
                 type="text"
                 placeholder="Position*"
@@ -127,7 +122,7 @@
               name="Project details"
               id="Project details"
               placeholder="Tell me about your project - its objectives, timeline and attach links to examples if available"
-              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs resize-none mb-6"
+              class="border border-solid border-gray-semidarkgray bg-gray-lightest focus:outline-none focus:border-instagramcolor-reds rounded-2xl py-2 px-4 w-full text-xs resize-none sm:mb-7 mb-3"
             ></textarea>
             <button
               class="rounded-2xl inline-block border border-solid border-black bg-black text-sm text-white font-semibold w-full py-2 hover:bg-transparent hover:text-black"
@@ -138,14 +133,14 @@
         </div>
 
         <div
-          id="Menu__navigation"
+          id="menu-navigation"
           class="Menu__navigation h-menu fixed mt-4 p-6 hidden w-[345px] bg-white shadow-2xl transition ease-in-out delay-75 duration-75 z-30 right-6 rounded-xxl top-2/4 -translate-y-[53%] my-auto bottom-0"
         >
           <div class="flex flex-col justify-between h-menu relative">
             <ion-icon
               name="close-outline"
               id="close-navigation"
-              class="close-navigation absolute right-[5%] text-2xl"
+              class="close-navigation absolute right-[5%] text-2xl cursor-pointerd"
             ></ion-icon>
             <div class="flex items-center gap-4 mb-12">
               <a href="#">
@@ -156,13 +151,12 @@
                 />
               </a>
               <div class="flex flex-col">
-                <a
-                  href="#"
-                  class="font-semibold text-sm text-black inline-block"
-                >
+                <p class="font-semibold text-sm text-black inline-block">
                   Gustavo Uruena
-                </a>
-                <a href="#" class="text-xs"> gustavou2186@gmail.com</a>
+                </p>
+                <a href="mailto:gustavou2186@gmail.com" class="text-xs">
+                  gustavou2186@gmail.com</a
+                >
               </div>
             </div>
             <div class="flex gap-3 justify-self-center">
@@ -173,7 +167,7 @@
                 <li>
                   <a
                     class="Header__contact cursor-pointer"
-                    id="Header__contact-menu"
+                    id="header-contact-menu"
                     >Contact</a
                   >
                 </li>
@@ -186,7 +180,7 @@
                   <ul>
                     <li>
                       <a
-                        href="Curriculum/Resume.pdf"
+                        href="curriculum/Resume.pdf"
                         download="Resume.pdf"
                         class="rounded-xl bg-red-400 px-3 py-2 hover:bg-red-500 transition ease-in-out delay-75 duration-75"
                         >Download CV</a
@@ -308,73 +302,71 @@
           class="overlay-navigation hidden fixed w-dvw h-dvh top-0 left-0 backdrop-blur-[8px] z-[21]"
         ></div>
         <div
-          id="overlay__contact"
+          id="overlay-contact"
           class="overlay__contact hidden fixed w-dvw h-dvh top-0 left-0 backdrop-blur-[8px] z-[36]"
         ></div>
       </header>
 
       <header
-        id="Header__fixed"
-        class="Header__fixed hidden w-full fixed left-0 right-0 mx-auto container top-5 rounded-3xl shadow-lg bg-white px-8 py-5 sm:px-14 sm:py-3 z-[100]"
+        id="header-fixed"
+        class="Header__fixed hidden w-full fixed left-0 right-0 mx-auto container top-5 rounded-3xl shadow-lg bg-white px-8 py-5 sm:px-5 sm:py-3 z-[100]"
       >
         <div class="flex flex-col sm:flex-row sm:justify-between w-full">
-          <nav class="flex relative justify-between w-full">
-            <ul class="flex gap-4 items-center">
-              <li class="font-medium text-lg mr-12 leading-6">
-                <a href="#">Gustavo Uruena</a>
-              </li>
+          <div
+            class="flex items-center text-center font-medium text-lg leading-6 w-[50%]"
+          >
+            <a class="inline-block mr-10" href="#">Gustavo Uruena</a>
 
-              <li
-                class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
-              >
-                <a href="#">Projects</a>
-              </li>
-              <li
-                class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
-              >
-                <a href="#">Services & Pricing</a>
-              </li>
-              <li
-                class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
-              >
-                <a href="#">About me</a>
-              </li>
-              <li
-                id="Header__contact-bar-nav"
-                class="text-xs text-gray-800 cursor-pointer hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
-              >
-                <a>Contact &nearr;</a>
-              </li>
-            </ul>
-
-            <div class="flex items-center">
-              <nav class="flex gap-6">
-                <ul class="hidden md:flex md:gap-6">
-                  <li class="text-xs">
-                    <a href="Curriculum/Resume.pdf" download="Resume.pdf"
-                      >Download CV</a
-                    >
-                  </li>
-                  <li class="text-xs">
-                    <button
-                      id="Header__contact-fixed"
-                      class="Header__contact relative after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-[1px] after:border-current after:content-['']"
-                    >
-                      Request a Project
-                    </button>
-                  </li>
-                </ul>
-                <div
-                  id="hamburger-fixed"
-                  class="hamburger relative h-3 w-6 top-0 right-0 sm:top-2/4 sm:right-0 sm:translate-y-2/4 sm:w-4 sm:h-2 cursor-pointer"
+            <nav class="flex relative">
+              <ul class="flex gap-4 items-center text-center">
+                <li
+                  class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
                 >
-                  <div class="line line-1"></div>
-                  <div class="line line-2"></div>
-                  <div class="line line-3"></div>
-                </div>
-              </nav>
+                  <a href="#">Projects</a>
+                </li>
+                <li
+                  class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
+                >
+                  <a href="#">Services & Pricing</a>
+                </li>
+                <li
+                  class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
+                >
+                  <a href="#">About me</a>
+                </li>
+                <li
+                  id="Header__contact-bar-nav"
+                  class="text-xs text-gray-800 cursor-pointer hover:bg-gray-semilight hover:rounded-2xl hover:py-1 hover:px-2"
+                >
+                  <a>Contact &nearr;</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-6">
+              <ul class="hidden md:flex md:gap-6 mr-20">
+                <li class="text-xs">
+                  <button href="curriculum/Resume.pdf" download="Resume.pdf">
+                    Download CV
+                  </button>
+                </li>
+                <li class="text-xs">
+                  <button
+                    id="Header__contact-fixed"
+                    class="Header__contact relative after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-[1px] after:border-current after:content-['']"
+                  >
+                    Request a Project
+                  </button>
+                </li>
+              </ul>
+              <ion-icon
+                id="hamburger-fixed"
+                class="hamburger absolute text-2xl top-[1.7%] right-[3%] sm:translate-y-2/4 cursor-pointer"
+                name="menu-outline"
+              ></ion-icon>
             </div>
-          </nav>
+          </div>
         </div>
       </header>
 
@@ -389,16 +381,17 @@
             loop
             class="rounded-[50%] z-[1]"
           >
-            <source src="Video/Comp_8.mp4.crdownload" type="video/mp4" />
+            <source src="video/hero.mp4" type="video/mp4" />
+            <source src="video/hero.ogg" type="video/ogg" />
           </video>
         </div>
         <h1
-          class="mb-3 text-2xl px-14 w-screen font-medium font-unbounded -tracking-tightest sm:text-3xl sm:w-full md:w-[80%] lg:-mt-[33%] lg:w-[80%] lg:text-6xl xl:-mt-[25%] z-20"
+          class="mb-3 text-4xl px-8 w-svw font-medium font-unbounded -tracking-tightest sm:text-4xl sm:w-full md:w-[100%] md:px-10 md:text-4xl lg:-mt-[33%] lg:w-[80%] lg:text-6xl xl:-mt-[25%] z-20"
         >
           Quality design & web development synergy
         </h1>
         <p
-          class="text-center text-sm leading-5 px-1 w-[100%] sm:text-lg sm:leading-7 sm:w-[90%] md:w-[80%] lg:w-[60%] lg:text-lg xl:text-xl xl:w-[55%] z-[1]"
+          class="text-center text-sm leading-5 w-[90%] sm:text-lg sm:leading-7 sm:w-[100%] sm:px-8 md:w-[80%] lg:w-[60%] lg:text-lg xl:text-xl xl:w-[55%] z-[1]"
         >
           I create intuitive design for websites and apps, helping businesses
           enhance user experience, boost key metrics and achieve digital
@@ -416,7 +409,7 @@
       </div>
     </div>
 
-    <script src="navbar.js"></script>
-    <script src="javascript.js"></script>
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/navbar.js"></script>
   </body>
 </html>
