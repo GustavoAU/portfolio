@@ -38,6 +38,12 @@ module.exports = {
       height: {
         menu: "calc(100dvh - 32px)",
       },
+      minHeight: {
+        menu: "calc(100dvh - 32px)",
+      },
+      maxHeight: {
+        menu: "calc(100dvh - 32px)",
+      },
     },
   },
   plugins: [],
