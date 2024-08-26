@@ -10,8 +10,11 @@ window.addEventListener("scroll", () => {
   handleHeader();
 });
 
+window.addEventListener("resize", () => {
+  handleMenuNavSize();
+});
+
 const handleHeader = () => {
-  console.log("Gustavo");
   const header = document.getElementById("header-fixed");
   const scrollPosition = window.scrollY;
   if (scrollPosition > 300) {
@@ -36,3 +39,16 @@ const handleHeader = () => {
     );
   }
 };
+
+const handleMenuNavSize = () => {
+  const menuNavigation = document.getElementById("menu-navigation");
+  const widthPosition = window.innerWidth;
+
+  if (widthPosition > 380) {
+    menuNavigation.classList.remove("left-0", "mx-auto");
+  } else {
+    menuNavigation.classList.add("left-0", "mx-auto");
+  }
+};
+
+handleMenuNavSize();

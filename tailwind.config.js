@@ -5,9 +5,14 @@ module.exports = {
     container: {
       center: true,
     },
+
     extend: {
       borderRadius: {
         xxl: "30px",
+      },
+
+      screens: {
+        xs: "500px",
       },
 
       backdropBlur: {
@@ -31,7 +36,7 @@ module.exports = {
         gray: {
           darkest: "#1f2024",
           dark: "#7f7f7f",
-          semidark: "#cac9cf",
+          semidark: "#CDCDCD",
           DEFAULT: "#c0ccda",
           semilight: "#f3f2f7",
           light: "#f7f7fa",
