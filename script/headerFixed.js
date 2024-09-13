@@ -1,43 +1,47 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementsByTagName("video")[0];
-  video.muted = true;
-  video.play();
-
-  handleHeader();
-});
-
 window.addEventListener("scroll", () => {
-  handleHeader();
+  handleScroll();
 });
 
 window.addEventListener("resize", () => {
   handleMenuNavSize();
 });
 
-const handleHeader = () => {
-  const header = document.getElementById("header-fixed");
+const handleScroll = () => {
   const scrollPosition = window.scrollY;
-  if (scrollPosition > 300) {
-    header.classList.remove("opacity-0", "-translate-y-full", "top-0");
-    header.classList.add(
-      "opacity-100",
-      "transform",
-      "translate-y-0",
-      "transition",
-      "duration-700",
-      "ease-in-out"
-    );
+
+  if (isScrollingTop() && scrollPosition > 300) {
+    showHeaderFixed();
   } else {
-    header.classList.remove("opacity-100", "translate-y-0");
-    header.classList.add(
-      "opacity-0",
-      "-translate-y-full",
-      "transition",
-      "duration-700",
-      "ease-in-out",
-      "top-0"
-    );
+    hideHeaderFixed();
   }
+};
+
+let previousScrollPosition = 0;
+
+const isScrollingTop = () => {
+  let goingUp = false;
+
+  let scrollPosition = window.scrollY;
+
+  if (previousScrollPosition > scrollPosition) {
+    goingUp = true;
+  }
+
+  previousScrollPosition = scrollPosition;
+
+  return goingUp;
+};
+
+const showHeaderFixed = () => {
+  const header = document.getElementById("header-fixed");
+  header.classList.remove("-translate-y-[200px]");
+  header.classList.add("translate-y-0");
+};
+
+const hideHeaderFixed = () => {
+  const header = document.getElementById("header-fixed");
+  header.classList.remove("translate-y-0");
+  header.classList.add("-translate-y-[200px]");
 };
 
 const handleMenuNavSize = () => {

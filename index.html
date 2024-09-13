@@ -18,7 +18,7 @@
   </head>
   <body class="font-inter h-[7000px]">
     <div
-      class="flex flex-col justify-between hero container relative min-h-menu bg-gray-semidark mt-4 rounded-xxl overflow-hidden mb-4"
+      class="flex flex-col justify-between hero container relative min-h-menu bg-gray-heroBg mt-4 rounded-xxl overflow-hidden mb-20"
     >
       <header class="relative z-20 px-8 py-5 sm:px-14 sm:py-3">
         <div class="flex flex-col sm:flex-row sm:justify-between w-full">
@@ -164,7 +164,13 @@
             </div>
             <div class="flex gap-3 justify-self-center">
               <ul class="flex flex-col gap-2">
-                <li><a href="#projects">Projects</a></li>
+                <li>
+                  <a
+                    href="https://www.google.com"
+                    class="projects-nav-section project-link scroll-smooth"
+                    >Projects</a
+                  >
+                </li>
                 <li><a href="#services-pricing">Services & Pricing</a></li>
                 <li><a href="#about">About me</a></li>
                 <li>
@@ -186,7 +192,7 @@
                       <a
                         href="curriculum/Resume.pdf"
                         download="Resume.pdf"
-                        class="rounded-xl bg-red-400 px-3 py-2 hover:bg-red-500 transition ease-in-out delay-75 duration-75"
+                        class="rounded-xl bg-red-400 px-3 py-2 hover:bg-red-500 transform transition ease-in-out delay-75 duration-75"
                         >Download CV</a
                       >
                     </li>
@@ -231,7 +237,7 @@
 
       <header
         id="header-fixed"
-        class="Header__fixed transform -translate-y-full opacity-0 w-full fixed top-0 left-0 right-0 mx-auto container rounded-3xl shadow-lg bg-white px-8 py-2 sm:px-5 sm:py-3 z-[10]"
+        class="Header__fixed transform -translate-y-full opacity-0 w-full fixed top-0 left-0 right-0 container rounded-3xl shadow-lg bg-white px-8 py-2 sm:px-5 sm:py-3 z-[100]"
       >
         <div class="flex flex-col sm:flex-row sm:justify-between w-full">
           <div
@@ -244,7 +250,11 @@
                 <li
                   class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl py-1 px-2"
                 >
-                  <a href="#projects">Projects</a>
+                  <a
+                    href="#projects"
+                    class="projects-nav-section project-link scroll-smooth"
+                    >Projects</a
+                  >
                 </li>
                 <li
                   class="text-xs text-gray-800 hover:bg-gray-semilight hover:rounded-2xl py-1 px-2"
@@ -297,8 +307,8 @@
         class="Hero__container z-[8] flex flex-col justify-center items-center text-center"
       >
         <div class="absolute flex justify-center items-center">
-          <video class="opacity-20" loop>
-            <source src="video/Hero.mp4" type="video/mp4" />
+          <video class="opacity-65" loop>
+            <source src="video/hero-bg.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="relative flex flex-col items-center">
@@ -331,7 +341,7 @@
               <li>
                 <a
                   href="#projects"
-                  class="hover:bg-gray-light py-2 px-4 rounded-xxl"
+                  class="hover:bg-gray-light py-2 px-4 rounded-xxl projects-nav-section project-link scroll-smooth"
                   >Projects</a
                 >
               </li>
@@ -362,20 +372,200 @@
             class="absolute right-0 bottom-0 w-full h-full -translate-y-full bg-white"
           ></div>
           <div
-            class="absolute right-0 bottom-0 w-full h-full -translate-y-full rounded-br-xxl bg-gray-semidark"
+            class="absolute right-0 bottom-0 w-full h-full -translate-y-full rounded-br-xxl bg-gray-heroBg"
           ></div>
 
           <div
             class="absolute right-0 bottom-0 w-full h-full -translate-x-full bg-white"
           ></div>
           <div
-            class="absolute right-0 bottom-0 w-full h-full -translate-x-full rounded-br-xxl bg-gray-semidark"
+            class="absolute right-0 bottom-0 w-full h-full -translate-x-full rounded-br-xxl bg-gray-heroBg"
           ></div>
         </div>
       </div>
     </div>
 
-    <script src="script/headerFixed.js"></script>
+    <div id="projects" class="py-10">
+      <div class="container">
+        <div
+          class="projects__Container flex flex-col xl:flex-row py-10 px-2 gap-8"
+        >
+          <div class="projects__Container-projects w-full xl:w-[30%] relative">
+            <div
+              id="projects-section-title"
+              class="projects-section sticky top-20 p-4"
+            >
+              <h2 class="text-3xl font-medium mb-2">Projects</h2>
+              <p class="text-base md:text-lg font-light text-gray-dark">
+                I have a proven track record of my own product and over 30
+                projects that have helped clients grow
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="project-section-videos w-full xl:w-[70%] flex flex-col gap-8 p-4"
+          >
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
+                <div>
+                  <a href="pnavicon.html" class="inline-block">
+                    <video
+                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                      muted
+                      loop
+                    >
+                      <source
+                        src="video/project-navicon.mp4"
+                        allow="autoplay;"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </a>
+                </div>
+                <div class="absolute text-gray-900 right-0 p-4">
+                  <p
+                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                  >
+                    Full-service development
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-gray-900 font-medium text-lg py-2">
+                    Navicon
+                    <span class="text-gray-subtitle text-lg"
+                      >/corporate website</span
+                    >
+                  </h3>
+                  <p class="text-base font-light text-gray-textProject w-[90%]">
+                    Redesign and development of a new corporate website that
+                    increased conversion rate by 2x
+                  </p>
+                </div>
+              </div>
+              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
+                <div>
+                  <a href="#" class="inline-block">
+                    <video
+                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                      muted
+                      loop
+                    >
+                      <source
+                        src="video/project-wcv.mp4"
+                        allow="autoplay;"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </a>
+                </div>
+                <div class="absolute text-gray-900 right-0 p-4">
+                  <p
+                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                  >
+                    Startup from idea to MVP
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-gray-900 font-medium text-lg py-2">
+                    WCV.VC
+                    <span class="text-gray-subtitle text-lg"
+                      >/Web application</span
+                    >
+                  </h3>
+                  <p class="text-base font-light text-gray-textProject w-[90%]">
+                    UX research, design and development of a new web application
+                    for personal brand groth
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
+                <div>
+                  <a href="#" class="inline-block">
+                    <video
+                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                      muted
+                      loop
+                    >
+                      <source
+                        src="video/project-utracesolutions.mp4"
+                        allow="autoplay;"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </a>
+                </div>
+                <div class="absolute text-gray-900 right-0 p-4">
+                  <p
+                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                  >
+                    24/7 support and development
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-gray-900 font-medium text-lg py-2">
+                    Utrace
+                    <span class="text-gray-subtitle text-lg"
+                      >/Corporate website</span
+                    >
+                  </h3>
+                  <p class="text-base font-light text-gray-textProject w-[90%]">
+                    A flexible website for an IT company that has helped it
+                    expand internationally
+                  </p>
+                </div>
+              </div>
+
+              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
+                <div>
+                  <a href="#" class="inline-block">
+                    <video
+                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                      muted
+                      loop
+                    >
+                      <source
+                        src="video/project-nprogression.mp4"
+                        allow="autoplay;"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </a>
+                </div>
+                <div class="absolute text-gray-900 right-0 p-4">
+                  <p
+                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                  >
+                    Scalable technology
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-gray-900 font-medium text-lg py-2">
+                    N.Progression
+                    <span class="text-gray-subtitle text-lg"
+                      >/Corporate website</span
+                    >
+                  </h3>
+                  <p class="text-base font-light text-gray-textProject w-[90%]">
+                    A multi-page website with CMS support, thoughtful UI system
+                    and effective code
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
+    <script type="module" src="script/headerFixed.js"></script>
     <script src="script/menus.js"></script>
+    <script src="script/navigation.js"></script>
+    <script src="script/hoverVideos.js"></script>
+    <script src="script/videoHero.js"></script>
   </body>
 </html>
