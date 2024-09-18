@@ -31,12 +31,12 @@ triggerProjects.forEach((triggerProject) => {
 });
 
 triggerMenuContact.forEach((triggerMenuContact) => {
-  triggerMenuContact.addEventListener("click", () => {
+  triggerMenuContact.addEventListener("click", (event) => {
+    event.stopPropagation();
     menuNavigation.classList.add("opacity-0", "translate-x-full");
     removeNavClasses(menuNavigation);
     overlayNavigation.classList.add("hidden");
     menuContact.classList.toggle("hidden");
-    overlayNavigation.classList.add("hidden");
     overlayContact.classList.toggle("hidden");
     body.classList.add("overflow-hidden");
     headerFixed.classList.add("hidden");
@@ -58,11 +58,17 @@ closeMenuIcons.forEach((closeMenuIcon) => {
   closeMenuIcon.addEventListener("click", () => {
     menuContact.classList.add("hidden");
     overlayContact.classList.add("hidden");
+    overlayNavigation.classList.add("hidden");
+    overlayServices.classList.add("hidden");
     menuNavigation.classList.add("opacity-0", "translate-x-full", "right-0");
     removeNavClasses(menuNavigation);
-    overlayNavigation.classList.add("hidden");
+
     body.classList.remove("overflow-hidden");
     headerFixed.classList.remove("hidden");
+    servicesMenuUxDesign.classList.add("hidden");
+    servicesMenuWebsite.classList.add("hidden");
+    servicesMenuFrontend.classList.add("hidden");
+    servicesMenuUxAudit.classList.add("hidden");
   });
 });
 
@@ -70,10 +76,15 @@ overlayMenus.forEach((overlayMenu) => {
   overlayMenu.addEventListener("click", () => {
     menuContact.classList.add("hidden");
     overlayContact.classList.add("hidden");
+    overlayNavigation.classList.add("hidden");
+    overlayServices.classList.add("hidden");
     body.classList.remove("overflow-hidden");
     menuNavigation.classList.add("opacity-0", "translate-x-full");
     removeNavClasses(menuNavigation);
-    overlayNavigation.classList.add("hidden");
+    servicesMenuUxDesign.classList.add("hidden");
+    servicesMenuWebsite.classList.add("hidden");
+    servicesMenuFrontend.classList.add("hidden");
+    servicesMenuUxAudit.classList.add("hidden");
     headerFixed.classList.remove("hidden");
   });
 });
