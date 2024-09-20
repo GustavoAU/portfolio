@@ -2105,10 +2105,6 @@ video {
     width: 66.666667%;
   }
 
-  .xl\:w-\[20\%\] {
-    width: 20%;
-  }
-
   .xl\:w-\[30\%\] {
     width: 30%;
   }
@@ -2119,10 +2115,6 @@ video {
 
   .xl\:w-\[50\%\] {
     width: 50%;
-  }
-
-  .xl\:w-\[80\%\] {
-    width: 80%;
   }
 
   .xl\:grid-cols-2 {
@@ -2139,10 +2131,6 @@ video {
 
   .xl\:grid-cols-\[52\.8\%\2c 45\%\] {
     grid-template-columns: 52.8% 45%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
   }
 
   .xl\:items-center {

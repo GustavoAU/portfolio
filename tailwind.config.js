@@ -55,16 +55,6 @@ module.exports = {
           light: "#aaa",
           lighter: "#ddd",
           lightest: "#F9F8FC",
-
-          // semidark: "#CDCDCD",
-
-          // semilight: "#f3f2f7",
-
-          // subtitle: "#B7B6BE",
-          // heroBg: "#F9F8FC",
-          // textProject: "#7A7A7A",
-          // textnav: "#AAAAAE",
-          // textSumm: "#939097",
         },
       },
       height: {
