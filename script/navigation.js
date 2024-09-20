@@ -39,9 +39,18 @@ function scrollPageTo(to, duration = 500) {
   });
 }
 const triggerProjectLinks = document.querySelectorAll(".project-link");
+
 triggerProjectLinks.forEach((triggerProjectLink) => {
   triggerProjectLink.addEventListener("click", (event) => {
     event.preventDefault();
     window.scrollPageTo("#projects", 2000);
+  });
+});
+
+const triggerServicesLinks = document.querySelectorAll(".services-link");
+triggerServicesLinks.forEach((triggerServiceLink) => {
+  triggerServiceLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollPageTo("#services-pricing", 2000);
   });
 });

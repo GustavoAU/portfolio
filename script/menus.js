@@ -9,7 +9,6 @@ const hamburgerIcons = document.querySelectorAll(".hamburger");
 const closeMenuIcons = document.querySelectorAll(".close-menus");
 const triggerProjects = document.querySelectorAll(".projects-nav-section");
 const headerFixed = document.getElementById("header-fixed");
-const projectsSectionTitle = document.getElementById("projects-section-title");
 
 const removeNavClasses = (menuNavigation) => {
   menuNavigation.classList.remove(

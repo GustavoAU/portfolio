@@ -20,9 +20,9 @@
     <div
       class="flex flex-col justify-between hero container relative min-h-menu bg-gray-lightest mt-4 rounded-xxl overflow-hidden mb-20"
     >
-      <header class="relative z-20 px-8 py-5 sm:px-14 sm:py-3">
+      <header class="z-20 px-8 py-5 sm:px-14 sm:py-3">
         <div class="flex flex-col sm:flex-row sm:justify-between w-full">
-          <div class="flex flex-col relative">
+          <div class="flex flex-col">
             <div class="font-semibold text-sm leading-6">
               <a href="index.html">Gustavo Uruena</a>
             </div>
@@ -30,7 +30,7 @@
               <a href="index.html">Web developer</a>
             </div>
           </div>
-          <div class="flex absolute left-2/4">
+          <div class="flex absolute top-1 left-2/4">
             <a href="#"
               ><img
                 src="images/gustavo/Gustavo.jpg"
@@ -56,7 +56,7 @@
                 </li>
               </ul>
               <ion-icon
-                class="hamburger absolute text-4xl sm:text-3xl top-[25%] right-[10%] sm:top-[1.5%] sm:right-[8%] sm:translate-y-2/4 md:top-[0.7%] md:right-[5%] lg:right-[3.5%] xl:top-[5%] cursor-pointer"
+                class="hamburger absolute text-4xl sm:text-3xl top-[18px] right-14 cursor-pointer"
                 name="menu-outline"
               ></ion-icon>
             </div>
@@ -88,7 +88,11 @@
                 <li
                   class="text-xs text-gray-800 hover:bg-gray-lightest hover:rounded-2xl py-1 px-2"
                 >
-                  <a href="#services-pricing">Services & Pricing</a>
+                  <a
+                    href="#services-pricing"
+                    class="projects-nav-section services-link scroll-smooth"
+                    >Services & Pricing</a
+                  >
                 </li>
                 <li
                   class="text-xs text-gray-800 hover:bg-gray-lightest hover:rounded-2xl py-1 px-2"
@@ -157,7 +161,9 @@
       </div>
       <div class="flex justify-between items-end">
         <div>
-          <p class="relative text-sm p-4 text-gray-darkest font-light z-50">
+          <p
+            class="relative text-sm px-14 py-5 text-gray-darkest font-light z-50"
+          >
             Digital marketing and research <br />
             corporate web development <br />
             Apps and complex systems design
@@ -177,7 +183,7 @@
               <li>
                 <a
                   href="#services-pricing"
-                  class="hover:bg-gray-light py-2 px-4 rounded-xxl"
+                  class="hover:bg-gray-light py-2 px-4 rounded-xxl projects-nav-section services-link scroll-smooth"
                   >Services & Pricing</a
                 >
               </li>
@@ -214,18 +220,17 @@
       </div>
     </div>
 
-    <section id="projects" class="py-10">
+    <section id="projects" class="Projects-section py-10">
       <div class="container">
         <div
-          class="projects__Container flex flex-col xl:flex-row py-10 px-2 gap-8"
+          class="Projects__Container flex flex-col 2xl:flex-row py-10 px-1 gap-8"
         >
-          <div class="projects__Container-projects w-full xl:w-[20%] relative">
-            <div
-              id="projects-section-title"
-              class="projects-section sticky top-20 p-4"
-            >
+          <div
+            class="Projects__wrapps-projects w-full lg:w-[80%] 2xl:w-[20%] relative"
+          >
+            <div class="projects-section sticky top-20 px-2 py-4 md:px-14">
               <h2 class="text-3xl font-medium mb-2">Projects</h2>
-              <p class="text-base md:text-lg font-light text-gray-dark">
+              <p class="text-xl 2xl:text-base font-light text-gray-dark">
                 I have a proven track record of my own product and over 30
                 projects that have helped clients grow
               </p>
@@ -233,156 +238,165 @@
           </div>
 
           <div
-            class="project-section-videos w-full xl:w-[80%] flex flex-col gap-8 px-4"
+            class="project-section-videos w-full 2xl:w-[80%] flex flex-col lg:flex-row flex-wrap px-2 md:px-4"
           >
-            <div class="flex flex-col lg:flex-row gap-8">
-              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
-                <div>
-                  <a href="pnavicon.html" class="inline-block">
-                    <video
-                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
-                      muted
-                      loop
-                    >
-                      <source
-                        src="video/project-navicon.mp4"
-                        allow="autoplay;"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </a>
-                </div>
-                <div class="absolute text-gray-900 right-0 p-4">
-                  <p
-                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
-                  >
-                    Full-service development
-                  </p>
-                </div>
-                <div>
-                  <h3 class="text-gray-900 font-medium text-lg py-2">
-                    Navicon
-                    <span class="text-gray-light text-lg"
-                      >/corporate website</span
-                    >
-                  </h3>
-                  <p class="text-base font-light text-gray-dark w-[90%]">
-                    Redesign and development of a new corporate website that
-                    increased conversion rate by 2x
-                  </p>
-                </div>
+            <div class="relative flex flex-col lg:w-[50%] w-full py-4 md:p-4">
+              <a href="pnavicon.html" class="inline-block">
+                <video
+                  class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                  muted
+                  loop
+                >
+                  <source
+                    src="video/project-navicon.mp4"
+                    allow="autoplay"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div class="absolute text-gray-900 right-4 top-4 p-4">
+                <p
+                  class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                >
+                  Full-service development
+                </p>
               </div>
-              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
-                <div>
-                  <a href="#" class="inline-block">
-                    <video
-                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
-                      muted
-                      loop
-                    >
-                      <source
-                        src="video/project-wcv.mp4"
-                        allow="autoplay;"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </a>
-                </div>
-                <div class="absolute text-gray-900 right-0 p-4">
-                  <p
-                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+
+              <div>
+                <h3
+                  class="text-gray-900 font-semibold text-xl md:text-2xl py-2 px-4"
+                >
+                  Navicon
+                  <span class="text-gray-light text-xl md:text-2xl"
+                    >/corporate website</span
                   >
-                    Startup from idea to MVP
-                  </p>
-                </div>
-                <div>
-                  <h3 class="text-gray-900 font-medium text-lg py-2">
-                    WCV.VC
-                    <span class="text-gray-light text-lg"
-                      >/Web application</span
-                    >
-                  </h3>
-                  <p class="text-base font-light text-gray-dark w-[90%]">
-                    UX research, design and development of a new web application
-                    for personal brand groth
-                  </p>
-                </div>
+                </h3>
+                <p
+                  class="text-base md:text-lg font-light text-gray-dark w-[90%] px-4"
+                >
+                  Redesign and development of a new corporate website that
+                  increased conversion rate by 2x
+                </p>
               </div>
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-8">
-              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
-                <div>
-                  <a href="#" class="inline-block">
-                    <video
-                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
-                      muted
-                      loop
-                    >
-                      <source
-                        src="video/project-utracesolutions.mp4"
-                        allow="autoplay;"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </a>
-                </div>
-                <div class="absolute text-gray-900 right-0 p-4">
-                  <p
-                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
-                  >
-                    24/7 support and development
-                  </p>
-                </div>
-                <div>
-                  <h3 class="text-gray-900 font-medium text-lg py-2">
-                    Utrace
-                    <span class="text-gray-light text-lg"
-                      >/Corporate website</span
-                    >
-                  </h3>
-                  <p class="text-base font-light text-gray-dark w-[90%]">
-                    A flexible website for an IT company that has helped it
-                    expand internationally
-                  </p>
-                </div>
+            <div class="relative flex flex-col lg:w-[50%] w-full py-4 md:p-4">
+              <a href="pnavicon.html" class="inline-block">
+                <video
+                  class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                  muted
+                  loop
+                >
+                  <source
+                    src="video/project-wcv.mp4"
+                    allow="autoplay"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div class="absolute text-gray-darkest right-4 top-4 p-4">
+                <p
+                  class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                >
+                  Startup from idea to MVP
+                </p>
               </div>
 
-              <div class="relative flex flex-col w-full lg:w-[50%] self-start">
-                <div>
-                  <a href="#" class="inline-block">
-                    <video
-                      class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
-                      muted
-                      loop
-                    >
-                      <source
-                        src="video/project-nprogression.mp4"
-                        allow="autoplay;"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </a>
-                </div>
-                <div class="absolute text-gray-900 right-0 p-4">
-                  <p
-                    class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+              <div>
+                <h3
+                  class="text-gray-darkest font-semibold text-xl md:text-2xl py-2 px-4"
+                >
+                  WCV.VC
+                  <span class="text-gray-light text-xl md:text-2xl"
+                    >/Web application</span
                   >
-                    Scalable technology
-                  </p>
-                </div>
-                <div>
-                  <h3 class="text-gray-900 font-medium text-lg py-2">
-                    N.Progression
-                    <span class="text-gray-light text-lg"
-                      >/Corporate website</span
-                    >
-                  </h3>
-                  <p class="text-base font-light text-gray-dark w-[90%]">
-                    A multi-page website with CMS support, thoughtful UI system
-                    and effective code
-                  </p>
-                </div>
+                </h3>
+                <p
+                  class="text-base md:text-lg font-light text-gray-dark w-[90%] px-4"
+                >
+                  UX research, design and development of a new web application
+                  for personal brand groth
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col lg:w-[50%] w-full py-4 md:p-4">
+              <a href="pnavicon.html" class="inline-block">
+                <video
+                  class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                  muted
+                  loop
+                >
+                  <source
+                    src="video/project-utracesolutions.mp4"
+                    allow="autoplay"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div class="absolute text-gray-900 right-4 top-4 p-4">
+                <p
+                  class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                >
+                  24/7 support and development
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="text-gray-darkest font-semibold text-xl md:text-2xl py-2 px-4"
+                >
+                  Utrace
+                  <span class="text-gray-light text-xl md:text-2xl"
+                    >/Corporate website</span
+                  >
+                </h3>
+                <p
+                  class="text-base md:text-lg font-light text-gray-dark w-[90%] px-4"
+                >
+                  A flexible website for an IT company that has helped it expand
+                  internationally
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col lg:w-[50%] w-full py-4 md:p-4">
+              <a href="pnavicon.html" class="inline-block">
+                <video
+                  class="projects-videos transform trigger-video rounded-3xl hover:scale-105"
+                  muted
+                  loop
+                >
+                  <source
+                    src="video/project-nprogression.mp4"
+                    allow="autoplay;"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div class="absolute text-gray-900 right-4 top-4 p-4">
+                <p
+                  class="bg-white text-xs xl:text-sm font-light px-2 py-1 rounded-xxl"
+                >
+                  Scalable technology
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="text-gray-darkest font-semibold text-xl md:text-2xl py-2 px-4"
+                >
+                  N.Progression
+                  <span class="text-gray-light text-xl md:text-2xl"
+                    >/Corporate website</span
+                  >
+                </h3>
+                <p
+                  class="text-base md:text-lg font-light text-gray-dark w-[90%] px-4"
+                >
+                  A multi-page website with CMS support, thoughtful UI system
+                  and effective code
+                </p>
               </div>
             </div>
           </div>
@@ -390,33 +404,32 @@
       </div>
     </section>
 
-    <section class="Services">
+    <section id="services-pricing" class="py-10">
       <div class="container">
-        <div class="Services__container bg-gray-lightest rounded-3xl xl:p-8">
+        <div
+          class="Services__Container flex flex-col 2xl:flex-row py-10 px-1 gap-8 bg-gray-lightest"
+        >
+          <div class="Services__title w-full 2xl:w-[20%]">
+            <div class="projects-section sticky top-20 px-2 md:px-14 py-4">
+              <h2 class="text-3xl font-medium mb-2">Services</h2>
+            </div>
+          </div>
+
           <div
-            class="Services__wrapped flex flex-col xl:flex-row py-10 px-2 gap-4"
+            class="Services-wrapps-cards w-full 2xl:w-[80%] flex flex-col lg:flex-row flex-wrap lg:px-4"
           >
             <div
-              class="Services__Container-projects w-full xl:w-[20%] relative"
-            >
-              <div
-                id="Services__title"
-                class="Services-section sticky top-20 p-4"
-              >
-                <h2 class="text-3xl font-medium mb-2">Services</h2>
-              </div>
-            </div>
-
-            <div
-              class="Services__cards w-full xl:w-[80%] flex flex-col xl:flex-row flex-wrap gap-6"
+              class="flex flex-col lg:w-[50%] self-center lg:self-auto w-full p-4"
             >
               <div
                 id="services-card-ux-design"
-                class="Services__cards-ux-design services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer w-full lg:w-[80%] 2xl:w-[49%] lg:self-center 2xl:self-start p-6 md:py-8 md:px-12 rounded-xxl"
+                class="Services__card-ux-design services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
               >
-                <div class="flex justify-between mb-2">
+                <div class="flex flex-col 2xl:flex-row justify-between mb-2">
                   <div>
-                    <h2 class="text-2xl font-semibold">UX/UI design</h2>
+                    <h2 class="text-xl lg:text-2xl font-semibold">
+                      UX/UI design
+                    </h2>
                   </div>
                   <div>
                     <p
@@ -426,14 +439,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="mb-6">
-                  <p class="w-full md:w-[65%] text-lg font-thin tracking-wide">
+
+                <div class="mb-2 lg:mb-6">
+                  <p
+                    class="w-full md:w-[65%] lg:w-[75%] text-base lg:text-lg font-thin tracking-wide"
+                  >
                     User interface development for website and application,
                     desgin systems engineering
                   </p>
                 </div>
 
-                <div class="flex justify-between mb-6">
+                <div class="flex flex-col lg:flex-row justify-between mb-6">
                   <div>
                     <p
                       class="text-gray-dark text-lg font-extralight opacity-45"
@@ -456,14 +472,20 @@
                   Leave a Request
                 </button>
               </div>
+            </div>
 
+            <div
+              class="flex flex-col lg:w-[50%] self-center lg:self-auto w-full p-4"
+            >
               <div
                 id="services-card-website"
-                class="Services__card-website services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer w-full lg:w-[80%] 2xl:w-[49%] lg:self-center 2xl:self-start p-6 md:py-8 md:px-12 rounded-xxl"
+                class="Services__card-website services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
               >
-                <div class="flex justify-between mb-2">
+                <div class="flex flex-col 2xl:flex-row justify-between mb-2">
                   <div>
-                    <h2 class="text-2xl font-semibold">Website development</h2>
+                    <h2 class="text-xl lg:text-2xl font-semibold">
+                      Website development
+                    </h2>
                   </div>
                   <div>
                     <p
@@ -473,14 +495,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="mb-6">
-                  <p class="w-full md:w-[80%] text-lg font-thin tracking-wide">
+
+                <div class="mb-2 lg:mb-6">
+                  <p
+                    class="w-full md:w-[65%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                  >
                     Creation of landing pages, websites and online stores for
                     small and medium-sized businesses
                   </p>
                 </div>
 
-                <div class="flex justify-between mb-6">
+                <div class="flex flex-col lg:flex-row justify-between mb-6">
                   <div>
                     <p
                       class="text-gray-dark text-lg font-extralight opacity-45"
@@ -498,19 +523,23 @@
                 </div>
 
                 <button
-                  class="inline-block menu-contact-trigger w-full md:w-auto text-gray-darkest bg-gray-lightest px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+                  class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
                 >
-                  Discuss the project
+                  Leave a Request
                 </button>
               </div>
+            </div>
 
+            <div
+              class="flex flex-col lg:w-[50%] self-center lg:self-auto w-full p-4"
+            >
               <div
                 id="services-card-front-end"
-                class="Services__card-front-end services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer w-full lg:w-[80%] 2xl:w-[49%] lg:self-center 2xl:self-start p-6 md:py-8 md:px-12 rounded-xxl"
+                class="Services__card-front-end services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
               >
-                <div class="flex justify-between mb-2">
+                <div class="flex flex-col 2xl:flex-row justify-between mb-2">
                   <div>
-                    <h2 class="text-2xl font-semibold">
+                    <h2 class="text-xl lg:text-2xl font-semibold">
                       Front-end development
                     </h2>
                   </div>
@@ -522,14 +551,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="mb-6">
-                  <p class="w-full md:w-[75%] text-lg font-thin tracking-wide">
+
+                <div class="mb-2 lg:mb-6">
+                  <p
+                    class="w-full sm:w-[60%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                  >
                     Layout and development of functionality on HTML, CSS and
                     JavaScript
                   </p>
                 </div>
 
-                <div class="flex justify-between mb-6">
+                <div class="flex flex-col lg:flex-row justify-between mb-6">
                   <div>
                     <p
                       class="text-gray-dark text-lg font-extralight opacity-45"
@@ -547,19 +579,23 @@
                 </div>
 
                 <button
-                  class="inline-block menu-contact-trigger w-full md:w-auto text-gray-darkest bg-gray-lightest px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+                  class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
                 >
                   Order
                 </button>
               </div>
+            </div>
 
+            <div
+              class="flex flex-col lg:w-[50%] self-center lg:self-auto w-full p-4"
+            >
               <div
                 id="services-card-ux-audit"
-                class="Services__card-ux-audit services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer w-full lg:w-[80%] 2xl:w-[49%] lg:self-center 2xl:self-start p-6 md:py-8 md:px-12 rounded-xxl"
+                class="Services__card-ux-audit services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
               >
-                <div class="flex justify-between mb-2">
+                <div class="flex flex-col 2xl:flex-row justify-between mb-2">
                   <div>
-                    <h2 class="text-2xl font-semibold">
+                    <h2 class="text-xl lg:text-2xl font-semibold">
                       UX audit of websites and apps
                     </h2>
                   </div>
@@ -571,19 +607,22 @@
                     </p>
                   </div>
                 </div>
-                <div class="mb-6">
-                  <p class="w-full md:w-[70%] text-lg font-thin tracking-wide">
+
+                <div class="mb-2 lg:mb-6">
+                  <p
+                    class="w-full sm:w-[60%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                  >
                     Product interface analysis and recommendations on UX
                     improvements
                   </p>
                 </div>
 
-                <div class="flex justify-between mb-6">
+                <div class="flex flex-col lg:flex-row justify-between mb-6">
                   <div>
                     <p
                       class="text-gray-dark text-lg font-extralight opacity-45"
                     >
-                      When is it useful?
+                      What is incluided in the price?
                     </p>
                   </div>
                   <div>
@@ -596,7 +635,7 @@
                 </div>
 
                 <button
-                  class="inline-block menu-contact-trigger w-full md:w-auto text-gray-darkest bg-gray-lightest px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+                  class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
                 >
                   Get consultation
                 </button>
@@ -606,6 +645,222 @@
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <div
+        class="Services__Container flex flex-col xl:flex-row py-10 px-1 gap-8 bg-gray-lightest"
+      >
+        <div class="Services__title w-full xl:w-[20%]">
+          <div class="projects-section sticky top-20 px-2 md:px-14 py-4">
+            <h2 class="text-3xl font-medium mb-2">Services</h2>
+          </div>
+        </div>
+
+        <div
+          class="Services-wrapps-cards w-full xl:w-[80%] flex flex-col lg:flex-row flex-wrap lg:px-4"
+        >
+          <div
+            class="flex flex-col md:w-[70%] lg:w-[50%] self-center lg:self-auto w-full p-4"
+          >
+            <div
+              id="services-card-ux-design"
+              class="Services__card-ux-design services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
+            >
+              <div class="flex flex-col 2xl:flex-row justify-between mb-2">
+                <div>
+                  <h2 class="text-xl lg:text-2xl font-semibold">
+                    UX/UI design
+                  </h2>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from $1000
+                  </p>
+                </div>
+              </div>
+
+              <div class="mb-2 lg:mb-6">
+                <p
+                  class="w-full md:w-[65%] lg:w-[75%] text-base lg:text-lg font-thin tracking-wide"
+                >
+                  User interface development for website and application, desgin
+                  systems engineering
+                </p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row justify-between mb-6">
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    What is incluided in the price?
+                  </p>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from 14 days
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+              >
+                Leave a Request
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:w-[70%] lg:w-[50%] self-center lg:self-auto w-full p-4"
+          >
+            <div
+              id="services-card-website"
+              class="Services__card-website services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
+            >
+              <div class="flex flex-col 2xl:flex-row justify-between mb-2">
+                <div>
+                  <h2 class="text-xl lg:text-2xl font-semibold">
+                    Website development
+                  </h2>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from $1500
+                  </p>
+                </div>
+              </div>
+
+              <div class="mb-2 lg:mb-6">
+                <p
+                  class="w-full md:w-[65%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                >
+                  Creation of landing pages, websites and online stores for
+                  small and medium-sized businesses
+                </p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row justify-between mb-6">
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    What is incluided in the price?
+                  </p>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from 21 days
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+              >
+                Leave a Request
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:w-[70%] lg:w-[50%] self-center lg:self-auto w-full p-4"
+          >
+            <div
+              id="services-card-front-end"
+              class="Services__card-front-end services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
+            >
+              <div class="flex flex-col 2xl:flex-row justify-between mb-2">
+                <div>
+                  <h2 class="text-xl lg:text-2xl font-semibold">
+                    Front-end development
+                  </h2>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from $1000
+                  </p>
+                </div>
+              </div>
+
+              <div class="mb-2 lg:mb-6">
+                <p
+                  class="w-full sm:w-[60%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                >
+                  Layout and development of functionality on HTML, CSS and
+                  JavaScript
+                </p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row justify-between mb-6">
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    What is incluided in the price?
+                  </p>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from 14 days
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:w-[70%] lg:w-[50%] self-center lg:self-auto w-full p-4"
+          >
+            <div
+              id="services-card-ux-audit"
+              class="Services__card-ux-audit services-card trigger-hover-cards trigger-menu-services transform transition-colors duration-700 cursor-pointer rounded-xxl w-full p-4 lg:p-8"
+            >
+              <div class="flex flex-col 2xl:flex-row justify-between mb-2">
+                <div>
+                  <h2 class="text-xl lg:text-2xl font-semibold">
+                    UX audit of websites and apps
+                  </h2>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from $400
+                  </p>
+                </div>
+              </div>
+
+              <div class="mb-2 lg:mb-6">
+                <p
+                  class="w-full sm:w-[60%] lg:w-[80%] text-base lg:text-lg font-thin tracking-wide"
+                >
+                  Product interface analysis and recommendations on UX
+                  improvements
+                </p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row justify-between mb-6">
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    What is incluided in the price?
+                  </p>
+                </div>
+                <div>
+                  <p class="text-gray-dark text-lg font-extralight opacity-45">
+                    from 5 days
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-3 font-semibold text-lg rounded-xxl transform transition-colors duration-700"
+              >
+                Get consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div
       id="menu-navigation"
@@ -643,7 +898,13 @@
                 >Projects</a
               >
             </li>
-            <li><a href="#services-pricing">Services & Pricing</a></li>
+            <li>
+              <a
+                href="#services-pricing"
+                class="projects-nav-section services-link scroll-smooth"
+                >Services & Pricing</a
+              >
+            </li>
             <li><a href="#about">About me</a></li>
             <li>
               <a
