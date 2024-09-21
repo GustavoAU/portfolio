@@ -1,12 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.html", "**/*.js"],
+  content: ["*.html", "**/*.js", "./styles/**/*.{css,scss}"],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "2048px",
+    },
     container: {
       center: true,
     },
 
     extend: {
+      container: {
+        screens: {
+          xl: "1920px",
+        },
+      },
+
       borderRadius: {
         xxl: "30px",
       },
@@ -34,13 +48,13 @@ module.exports = {
 
       colors: {
         gray: {
-          darkest: "#1f2024",
-          dark: "#7f7f7f",
-          semidark: "#CDCDCD",
-          DEFAULT: "#c0ccda",
-          semilight: "#f3f2f7",
-          light: "#f7f7fa",
-          lightest: "#fcfbfd",
+          darkest: "#222",
+          darker: "#666",
+          dark: "#777",
+          DEFAULT: "#999",
+          light: "#aaa",
+          lighter: "#ddd",
+          lightest: "#F9F8FC",
         },
       },
       height: {
