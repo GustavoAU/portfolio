@@ -54,7 +54,7 @@ module.exports = {
           DEFAULT: "#999",
           light: "#aaa",
           lighter: "#ddd",
-          lightest: "#F9F8FC",
+          lightest: "#FCFBFD",
         },
       },
       height: {
