@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.5"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
   }
 }

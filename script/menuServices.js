@@ -1,3 +1,7 @@
+// const { JSDOM } = require("jsdom");
+
+// Create a fake DOM environment using JSDOM
+
 const servicesMenuUxDesign = document.getElementsByClassName(
   "Services__menu-ux-design"
 )[0];

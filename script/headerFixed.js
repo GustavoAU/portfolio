@@ -1,3 +1,11 @@
+// const { JSDOM } = require("jsdom");
+
+// if (typeof window === "undefined") {
+//   const { window } = new JSDOM(`<!DOCTYPE html><html><body></body></html>`);
+//   global.window = window;
+//   global.document = window.document;
+// }
+
 window.addEventListener("scroll", () => {
   handleScroll();
 });
@@ -56,3 +64,4 @@ const handleMenuNavSize = () => {
 };
 
 handleMenuNavSize();
+
