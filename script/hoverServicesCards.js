@@ -1,6 +1,3 @@
-
-
-
 const servicesCardsBg = document.querySelectorAll(".trigger-hover-cards");
 servicesCardsBg.forEach((cardOut) => {
   cardOut.addEventListener("mouseover", () => {
