@@ -25,3 +25,17 @@ $gray-lightest: #f9f8fc;
   }
 }
 
+.bg-contactsImage {
+  background-image: none;
+}
+
+@media (min-width: 1280px) {
+  .bg-contactsImage {
+    background-image: url("/images/contacts-image/cta.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+}

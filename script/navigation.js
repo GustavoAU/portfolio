@@ -54,3 +54,11 @@ triggerServicesLinks.forEach((triggerServiceLink) => {
     window.scrollPageTo("#services-pricing", 2000);
   });
 });
+
+const triggerContactsLinks = document.querySelectorAll(".contacts-link");
+triggerContactsLinks.forEach((triggerContactsLink) => {
+  triggerContactsLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollPageTo("#about", 2000);
+  });
+});

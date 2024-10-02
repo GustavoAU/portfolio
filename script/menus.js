@@ -1,10 +1,12 @@
 const menuNavigation = document.getElementById("menu-navigation");
-const overlayNavigation = document.getElementById("overlay-navigation");
+
 const body = document.body;
 const menuContact = document.getElementById("menu-contact");
 const overlayContact = document.getElementById("overlay-contact");
-const triggerMenuContact = document.querySelectorAll(".menu-contact-trigger");
 const overlayMenus = document.querySelectorAll(".overlay-menus");
+const overlayNavigation = document.getElementById("overlay-navigation");
+const overlayAboutMe = document.getElementById("overlay-about-me");
+const triggerMenuContact = document.querySelectorAll(".menu-contact-trigger");
 const hamburgerIcons = document.querySelectorAll(".hamburger");
 const closeMenuIcons = document.querySelectorAll(".close-menus");
 const triggerProjects = document.querySelectorAll(".projects-nav-section");
@@ -33,10 +35,10 @@ triggerMenuContact.forEach((triggerMenuContact) => {
   triggerMenuContact.addEventListener("click", (event) => {
     event.stopPropagation();
     menuNavigation.classList.add("opacity-0", "translate-x-full");
-    removeNavClasses(menuNavigation);
-    overlayNavigation.classList.add("hidden");
     menuContact.classList.toggle("hidden");
+    removeNavClasses(menuNavigation);
     overlayContact.classList.toggle("hidden");
+    overlayNavigation.classList.add("hidden");
     body.classList.add("overflow-hidden");
     headerFixed.classList.add("hidden");
   });
@@ -56,12 +58,13 @@ hamburgerIcons.forEach((hamburgerIcon) => {
 closeMenuIcons.forEach((closeMenuIcon) => {
   closeMenuIcon.addEventListener("click", () => {
     menuContact.classList.add("hidden");
+    menuAboutMe.classList.add("hidden");
     overlayContact.classList.add("hidden");
     overlayNavigation.classList.add("hidden");
     overlayServices.classList.add("hidden");
+    overlayAboutMe.classList.add("hidden");
     menuNavigation.classList.add("opacity-0", "translate-x-full", "right-0");
     removeNavClasses(menuNavigation);
-
     body.classList.remove("overflow-hidden");
     headerFixed.classList.remove("hidden");
     servicesMenuUxDesign.classList.add("hidden");
@@ -74,9 +77,11 @@ closeMenuIcons.forEach((closeMenuIcon) => {
 overlayMenus.forEach((overlayMenu) => {
   overlayMenu.addEventListener("click", () => {
     menuContact.classList.add("hidden");
+    menuAboutMe.classList.add("hidden");
     overlayContact.classList.add("hidden");
     overlayNavigation.classList.add("hidden");
     overlayServices.classList.add("hidden");
+    overlayAboutMe.classList.add("hidden");
     body.classList.remove("overflow-hidden");
     menuNavigation.classList.add("opacity-0", "translate-x-full");
     removeNavClasses(menuNavigation);
@@ -84,6 +89,7 @@ overlayMenus.forEach((overlayMenu) => {
     servicesMenuWebsite.classList.add("hidden");
     servicesMenuFrontend.classList.add("hidden");
     servicesMenuUxAudit.classList.add("hidden");
+
     headerFixed.classList.remove("hidden");
   });
 });

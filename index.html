@@ -97,7 +97,11 @@
                 <li
                   class="text-xs text-gray-800 hover:bg-gray-lightest hover:rounded-2xl py-1 px-2"
                 >
-                  <a href="#about">About me</a>
+                  <a
+                    href="#about"
+                    class="contacts-link projects-nav-section scroll-smooth"
+                    >About me</a
+                  >
                 </li>
                 <li
                   class="text-xs text-gray-800 cursor-pointer hover:bg-gray-lightest hover:rounded-2xl py-1 px-2"
@@ -190,7 +194,7 @@
               <li>
                 <a
                   href="#about"
-                  class="hover:bg-gray-light py-2 px-4 rounded-xxl"
+                  class="hover:bg-gray-light py-2 px-4 rounded-xxl contacts-link projects-nav-section scroll-smooth"
                   >About me</a
                 >
               </li>
@@ -880,6 +884,61 @@
       </div>
     </section>
 
+    <section id="about" class="md:py-10">
+      <div class="container">
+        <div
+          class="contacts__Container flex flex-col 2xl:flex-row md:px-4 md:py-10 flex-wrap items-start"
+        >
+          <div class="2xl:sticky top-20 px-2 md:px-14 py-4 w-full 2xl:w-[15%]">
+            <h2 class="text-3xl font-medium md:mb-10">Contacts</h2>
+          </div>
+
+          <div class="w-full 2xl:w-[85%] flex flex-col lg:flex-row lg:px-4">
+            <div
+              class="flex flex-col self-center lg:self-auto w-full p-2 md:p-4"
+            >
+              <div
+                class="rounded-xxl w-full p-4 lg:p-8 bg-gray-lightest h-full bg-no-repeat bg-right bg-contain bg-contactsImage"
+              >
+                <div class="mb-8">
+                  <h2 class="text-2xl lg:text-3xl font-semibold mb-2">
+                    You've got a challenge? Let's talk!
+                  </h2>
+                  <p
+                    class="text-gray-darkest w-full md:w-[45%] text-xl font-extralight opacity-80"
+                  >
+                    Get a free consultation on your own project - leave a
+                    request on the website or contact me in any convenient way
+                  </p>
+                </div>
+                <button
+                  class="inline-block menu-contact-trigger w-full md:w-auto px-6 py-2 font-semibold text-lg bg-black text-white opacity-85 hover:opacity-100 rounded-xxl transform transition-opacity duration-700 mb-4"
+                >
+                  Leave a Request
+                </button>
+                <button
+                  class="inline-block menu-about-me-trigger w-full md:w-auto px-6 py-2 font-semibold text-lg bg-gray-100 opacity-60 text-gray-darkest rounded-xxl transform transition-colors duration-700 xl:ml-6"
+                >
+                  More about me
+                </button>
+                <div class="text-gray-darkest opacity-30">
+                  <p class="mt-4">
+                    Also, feel free to email me at
+                    <a
+                      href="mailto:gustavou2186@gmail.com"
+                      class="inline-block relative after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-[1px] after:border-current after:content-['']"
+                    >
+                      gustavou2186@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div
       id="menu-navigation"
       class="Menu__navigation max-h-menu opacity-0 transform transition duration-500 ease-in-out translate-x-full bg-opacity-1 left-0 right-0 fixed mt-4 p-6 w-[345px] bg-white shadow-2xl rounded-xxl top-0 my-auto mx-auto bottom-0 z-[200]"
@@ -902,7 +961,10 @@
             <p class="font-semibold text-sm text-black inline-block">
               Gustavo Uruena
             </p>
-            <a href="mailto:gustavou2186@gmail.com" class="text-xs">
+            <a
+              href="mailto:gustavou2186@gmail.com"
+              class="text-xs inline-block"
+            >
               gustavou2186@gmail.com</a
             >
           </div>
@@ -923,7 +985,13 @@
                 >Services & Pricing</a
               >
             </li>
-            <li><a href="#about">About me</a></li>
+            <li>
+              <a
+                href="#about"
+                class="contacts-link projects-nav-section scroll-smooth"
+                >About me</a
+              >
+            </li>
             <li>
               <a
                 class="Header__contact menu-contact-trigger cursor-pointer"
@@ -1386,6 +1454,149 @@
       class="overlay-menus hidden fixed w-dvw h-dvh top-0 left-0 backdrop-blur-[8px] z-[30]"
     ></div>
 
+    <div
+      id="menu-about-me"
+      class="fixed top-1/2 bottom-1/2 xl:top-0 xl:bottom-0 left-0 right-0 w-full h-[90%] lg:h-[60%] md:w-[80%] lg:w-[50%] 2xl:w-[35%] 3xl:w-[25%] transform transition duration-500 ease-in-out mx-auto my-auto px-4 md:px-8 py-11 xl:px-8 z-40 rounded-xxl bg-gray-lightest shadow-2xl hidden"
+    >
+      <ion-icon
+        name="close-outline"
+        id="close-contact"
+        class="close-menus absolute right-[5%] text-2xl top-[4%] cursor-pointer"
+      ></ion-icon>
+      <div class="flex flex-col items-center">
+        <div class="mb-4">
+          <img
+            src="images/gustavo/Gustavo.jpg"
+            alt=""
+            class="rounded-full h-24 w-24"
+          />
+        </div>
+        <div class="mb-6">
+          <p class="text-2xl md:text-3xl text-center mb-1">Gustavo Uruena</p>
+          <h3 class="text-base font-medium md:text-xl">
+            Product designer and front-end developer
+          </h3>
+        </div>
+        <div>
+          <p class="text-center md:text-lg font-light">
+            I've been designing quality interfaces and websites for over 6
+            years. My mission is to create usefull product that will make
+            people's live easier and more enjoyable.
+          </p>
+        </div>
+        <div class="flex flex-wrap w-full mt-8 gap-2">
+          <div
+            class="w-full flex flex-col lg:flex-row justify-evenly gap-2 xl:mb-2"
+          >
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              product management
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              UX/UI design
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Web development
+            </p>
+          </div>
+          <div
+            class="w-full flex flex-col lg:flex-row justify-evenly gap-2 xl:mb-2"
+          >
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Entrepreneuship
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Startups
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Investments
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Psychology
+            </p>
+          </div>
+          <div
+            class="w-full flex flex-col lg:flex-row justify-evenly gap-2 xl:mb-2"
+          >
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Self-development
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              leadership
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Travelling
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Sport
+            </p>
+          </div>
+          <div
+            class="w-full flex flex-col lg:flex-row justify-center gap-2 xl:mb-2"
+          >
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Strategy
+            </p>
+            <p
+              class="rounded-xxl border-solid border-gray-lighter border-[1px] px-2 py-1 w-auto"
+            >
+              Personal brand
+            </p>
+          </div>
+        </div>
+        <div class="mt-10">
+          <ul class="flex gap-4 mt-2">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gustavo-rivaldo-183aaa244/"
+                target="_blank"
+                ><ion-icon
+                  name="logo-linkedin"
+                  class="text-3xl text-blue-700"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/GustavoAU" target="_blank"
+                ><ion-icon
+                  name="logo-github"
+                  class="text-3xl text-gray-darkest"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="overlay-about-me"
+      class="overlay-menus hidden fixed w-dvw h-dvh top-0 left-0 backdrop-blur-[8px] z-[30]"
+    ></div>
+
     <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
     <script type="module" src="script/headerFixed.js"></script>
     <script src="script/menus.js"></script>
@@ -1393,6 +1604,6 @@
     <script src="script/hoverVideos.js"></script>
     <script src="script/menuServices.js"></script>
     <script src="script/hoverServicesCards.js"></script>
-    <script src="script/transitionServicesToAdvanteges.js"></script>
+    <script src="script/menuAboutMe.js"></script>
   </body>
 </html>
