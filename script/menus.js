@@ -1,5 +1,4 @@
 const menuNavigation = document.getElementById("menu-navigation");
-
 const body = document.body;
 const menuContact = document.getElementById("menu-contact");
 const overlayContact = document.getElementById("overlay-contact");
